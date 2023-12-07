@@ -6,7 +6,7 @@
 //
 
 #include "pointerWrapper.h"
-//  _p(new int(value)) is dynamically allocating memory to _p on the heap with the data of 'value'. If wanted to use automatic memory allocation by stack, new would be removed from the constructor and the destructor isnt neccesarily needed.
+//  _p(new int(value)) is dynamically allocating memory to _p on the stack with the data of 'value'. If wanted to use automatic memory allocation by heap, new would be removed from the constructor and the destructor isnt neccesarily needed.
 
 pointerWrapper::pointerWrapper(int value) : _p(new int(value))//constructor, passed parameter, dynamically set to _p pointer
 {
